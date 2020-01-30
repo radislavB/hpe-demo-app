@@ -3,7 +3,7 @@ variables:
   OctaneConnectionName: 'DavidMilstein'
   ALMOctaneConnection1Workspaces: '2001'
   ALMOctaneLogLevel: 'debug'
-  # GithubRepositoryConnection: ''
+  GithubRepositoryConnection: 'github.com_DavidMilstein'
 
 jobs:
 - job: AlmOctanePipelineStart
