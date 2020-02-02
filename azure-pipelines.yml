@@ -1,9 +1,9 @@
 variables:
   InjectAlmOctaneTasks: 'true'
-  OctaneConnectionName: 'DavidMilstein'
+  OctaneConnectionName: 'ymlQA6s1002first2001'
   ALMOctaneConnection1Workspaces: '2001'
   ALMOctaneLogLevel: 'debug'
-  GithubRepositoryConnection: 'github.com_DavidMilstein'
+  GithubRepositoryConnection: 'DavidMilstein'
 
 jobs:
 - job: AlmOctanePipelineStart
