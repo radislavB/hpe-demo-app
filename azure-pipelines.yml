@@ -1,15 +1,27 @@
+ # Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code..
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
 variables:
   InjectAlmOctaneTasks: 'true'
-  OctaneConnectionName: 'ymlQA6s1002first2001'
-  ALMOctaneConnection1Workspaces: '2001'
+  AlmOctaneConnection1: 'ymlQA6s1002first2001'
+  AlmOctaneConnection1Workspaces: '2001'
   ALMOctaneLogLevel: 'debug'
-  GithubRepositoryConnection: 'DavidMilstein'
+  'system.debug': 'true'
 
 jobs:
 - job: AlmOctanePipelineStart
   condition: always()
-  
-- job: C
+
+- job: A
+  steps:
+  - script: echo Hello, Job A!
+    displayName: 'Run a one-line script'
+  dependsOn:
+  - AlmOctanePipelineStart
+
+- job: B
   dependsOn: AlmOctanePipelineStart
   pool:
     vmImage: 'ubuntu-latest'
@@ -29,4 +41,5 @@ jobs:
   condition: always()
   dependsOn:
   - AlmOctanePipelineStart
-  - C
+  - A
+  - B
