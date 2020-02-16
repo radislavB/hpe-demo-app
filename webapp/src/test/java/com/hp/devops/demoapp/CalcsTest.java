@@ -61,5 +61,10 @@ public class CalcsTest {
 	}
 
 	@Test
+	public void neq_test_D_BrokenTest() {
+		assertTrue(Calcs.nonEqual(6, 6));
+	}
+
+	@Test
 	public void always_true_A() {assertTrue(Calcs.alwaysTrue());}
 }
