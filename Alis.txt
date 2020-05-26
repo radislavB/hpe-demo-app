@@ -1,4 +1,4 @@
 commit for US
 commit for D
 commit for QS
-commit for azure
+commit for azure1
