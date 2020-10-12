@@ -1,7 +1,1 @@
-commit for US
-commit for D
-commit for QS
-commit for azure1
-a
-asdas
-a
+GOCD
